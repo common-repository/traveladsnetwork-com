@@ -1,0 +1,69 @@
+@keyframes shake{
+	0%,100%
+	{
+		transform:translateX(0);
+		border-color:red}25%{transform:translateX(5px)
+	}
+	75%
+	{
+		transform:translateX(-5px)
+	}
+}
+.animateWrongCreds
+{
+	animation:shake .3s infinite
+}
+div#wrongCreds
+{
+	display:none;
+	color:#b52020;
+}
+div#login_window
+{
+	background: white;
+	box-shadow: 0 0 0 1000px #0001;
+	padding: 40px;
+	border: 1px solid #aaa;
+	width: 300px;
+	text-align: center;
+	left:0;
+	right:0;
+	margin: 15px auto;
+	transform: translateZ(1px);
+}
+div#login_window p.title
+{
+	text-align: left;
+	margin: 0;
+	font-size: 20pt;
+}
+div#login_window p.subtitle
+{
+	margin-bottom: 30px;
+	text-align: right;
+}
+div#login_window
+{
+	text-align: left;
+}
+div#login_window input 
+{
+    width: 100%;
+    margin: 15px 0;
+}
+
+#travelads_sectionid .inside
+{
+	overflow: hidden;
+	margin:0;
+}
+#travelads_sectionid .inside:before
+{
+	content: "\AOenean quis mattis eros. Sed egestas euismod felis nec condimentum. Morbi dapibus ligula non enim elementum, at viverra nisl pretium. Etiam nec dignissim ligula. Suspendisse bibendum pretium orci eget facilisis. Curabitur ornare semper felis vitae molestie. Donec porta volutpat tellus. Fusce sagittis dapibus cursus. Ut ullamcorper dictum dui, nec rutrum massa congue vitae. Cras ac lorem eu odio vulputate mattis pretium et \Aquam. Integer euismod dui vitae hendrerit congue. Mauris sollicitudin lobortis sem id malesuada. Integer sit amet ipsum non mi egestas auctor. Praesent id pharetra nulla. Quisque erat justo, finibus eget faucibus ut, pharetra at tellus. Nunc non urna placerat, accumsan quam vel, bibendum ex. Nunc sit amet malesuada nibh. Sed fringilla faucibus sem. Nulla facilisi. Nullam viverra, enim at lobortis tincidunt,\A\A nulla ligula pretium lectus, et fringilla arcu nulla sit amet turpis. bi dapibus ligula non enim elementum, at viverra nisl pretium. Etiam nec dignissim ligula. Suspendisse bibendum pretium orci eget facilisis. Curabitur ornare semper felis vitae molestie. Donec porta volutpat tellus. Fusce sagittis dapibus cursus. Ut ullamcorper dictum dui, nec rutrum massa congue vitae. Cras ac lorem eu odio vulputate mattis pretium et quam. Integer euismod dui vitae hendrerit congue. Mauris sollicitudin lobortis sem id malesuada. Integer sit amet ipsum non mi egestas auctor. Praesent id pharetra nulla. Quisque erat justo, finibus eget faucibus ut, pharetra at tellus. Nunc non urna placerat, accumsan quam vel, bibendum ex. Nunc sit amet malesuada nibh. Sed fringilla faucibus sem. Nulla facilisi. Nullam viverra, enim at lobortis tincidunt, nulla ligula pretium lectus, et fringilla arcu nulla sit amet turpis. Suspendisse non lacus tempus, suscipit nisi non, condimentum eros. Vestibulum consequat eros vel tortor tempus, vel rutrum tellus lacinia.";
+	position: absolute;
+	font-size: 20px;
+	line-height: 27px;
+	z-index: 0;
+	filter: blur(4px);
+	white-space: pre-wrap;
+}

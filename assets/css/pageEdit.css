@@ -1,0 +1,324 @@
+:root
+{
+	--current-keyword-color: #e2a700a3;
+	--off-keyword-color: #ff5656a3;
+	--off-hotel-color: #3498dba3;
+	--on-keyword-color: #63dc5ba3;
+	--on-hotel-color: #63dc5ba3;
+}
+
+div#navMenuOffset
+{
+	width:100%;
+	display:block;
+	height:70px;
+}
+table#navMenu input,table#navMenu select
+{
+	width:100%
+}
+table#navMenu
+{
+    box-sizing: border-box;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#eee;
+	border-bottom:1px solid #ccc;
+	padding:0 20px;
+	z-index: 1;
+
+    transition: border-radius .3s,
+                box-shadow .3s;
+}
+table#navMenu.flying {
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 10px 5px #0003;
+}
+table#navMenu td
+{
+	width:1000px;
+	padding:0 10px
+}
+td.navMenu_autoWidth
+{
+	text-align:right
+}
+table#navMenu td#navMenu_arrowsCell
+{
+	width:300px;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+div#navMenu_buttonOnOff
+{
+	display:block;
+	width:35px;
+	height:15px;
+	background:#f5d3d3;
+	border-radius:50px
+}
+div#navMenu_buttonOnOff:after
+{
+	content:'';
+	width:23px;
+	height:23px;
+	border-radius:50px;
+	transition-duration:.2s;
+	display:block;
+	position:relative;
+	top:50%;
+	left:50%;
+	background:#e07676;
+	box-shadow:0 0 10px #cc7b7b;
+	transform:translate(-50%,-50%) translateX(-10px)
+}
+div#navMenu_buttonOnOff.active:after
+{
+	background:#3cc73c;
+	box-shadow:0 0 10px #7bcc81;
+	transform:translate(-50%,-50%) translateX(10px)
+}
+div#navMenu_buttonOnOff.active
+{
+	background:#c1e2c5
+}
+#navMenunextWord,#navMenuprevWord
+{
+	cursor:pointer;
+	font-size:20px;
+	padding:0 5px
+}
+mark.TANKeyWord
+{
+	background-color: var(--off-keyword-color);
+	border-radius: 3px;
+	cursor: pointer;
+}
+mark.TANKeyWord.custom
+{
+	background-color: var(--off-hotel-color);
+}
+mark.TANKeyWord.active
+{
+	background-color: var(--on-keyword-color);
+}
+mark.TANKeyWord.custom.active
+{
+	background-color: var(--on-hotel-color);
+}
+mark.TANKeyWord.current
+{
+	background-color: var(--current-keyword-color)!important;
+}
+
+.questionDiv
+{
+	position: relative;
+}
+.shortcutDiv svg
+{
+	width: 85%;
+	vertical-align: sub;
+}
+.shortcutDiv .explain table
+{
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+.shortcutDiv .explain table td
+{
+	border-bottom: 1px solid #ccc;
+	padding: 3px 0!important;
+}
+
+.questionDiv span.questionIcon, .shortcutDiv span.shortcutIcon
+{
+	display: block;
+	border-radius: 100%;
+	height: 25px;
+	width: 25px;
+	background: #009cdf;
+	color: white;
+	line-height: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: default;
+}
+.questionDiv .explain, .shortcutDiv .explain
+{
+	visibility: hidden;
+	position: absolute;
+
+	background: white;
+	box-shadow: 5px 5px 5px #0005;
+	padding: 15px;
+	text-align: left;
+	width: 300px;
+	border: 1px solid #ccc;
+	right: 0px;
+	top: 30px;
+	z-index: 5;
+
+	transform: translateY(10px);
+	opacity: 0;
+
+	transition: visibility 0s .3s,
+	            all .3s
+}
+.questionDiv span.questionIcon:hover + .explain,
+ .shortcutDiv span.shortcutIcon:hover + .explain,
+ .explain:hover
+{
+	visibility: visible;
+	transform: translateY(0px);
+	opacity: 1;
+}
+span.newKW
+{
+	padding: 0px 3px;
+	background: #eee;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 9pt;
+	line-height: 22px;
+
+	transition-duration: .3s;
+}
+
+span.newKW:hover
+{
+	background: #555;
+	color: #eee;
+	cursor: pointer;
+}
+
+
+/*
+ * copying tinyMCE style
+ */
+
+#travel_editor {
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	margin: 9px 10px;
+	max-width: 100%;
+	-webkit-font-smoothing: antialiased !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+#travel_editor p {
+	font-size: inherit;
+	line-height: inherit;
+	display: block;
+	margin: initial;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h1 {
+	display: block;
+	font-size: 2em;
+	margin: initial;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h2 {
+	display: block;
+	font-size: 1.5em;
+	margin: initial;
+	margin-block-start: 0.83em;
+	margin-block-end: 0.83em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h3 {
+	display: block;
+	font-size: 1.17em;
+	margin: initial;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h4 {
+	display: block;
+	margin: initial;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h5 {
+	display: block;
+	font-size: 0.83em;
+	margin: initial;
+	margin-block-start: 1.67em;
+	margin-block-end: 1.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor h6 {
+	display: block;
+	font-size: 0.67em;
+	margin: initial;
+	margin-block-start: 2.33em;
+	margin-block-end: 2.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor pre {
+	font-family: Consolas, Monaco, monospace;
+	display: block;
+	white-space: pre;
+	margin: 1em 0px;
+	padding: initial;
+	line-height: inherit;
+}
+#travel_editor .aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#travel_editor .alignleft {
+	float: left;
+	margin: 0.5em 1em 0.5em 0;
+}
+#travel_editor .alignright {
+	float: right;
+	margin: 0.5em 0 0.5em 1em;
+}
+#travelads_sectionid .inside
+{
+	overflow: hidden;
+	margin:0;
+}

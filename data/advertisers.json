@@ -1,0 +1,51 @@
+[
+    {
+        "id":          7,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/agoda_logo.jpg",
+        "name":        "Agoda",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=14073&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 963
+    },
+    {
+        "id":          111,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/Booking.com_.png",
+        "name":        "Booking",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=34015&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 1163
+    },
+    {
+        "id":          5,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/expedia.png",
+        "name":        "Expedia",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=12742&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 519
+    },
+    {
+        "id":          17,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/Hotel-com.png",
+        "name":        "Hotels.com",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=15739&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 179
+    },
+    {
+        "id":          121,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/KKday.png",
+        "name":        "KKday",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=33463&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 1169
+    },
+    {
+        "id":          13,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/Klook.jpeg",
+        "name":        "Klook",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=30741&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 1145
+    },
+    {
+        "id":          39,
+        "logo_url":    "https://whitelabel.traveladsnetwork.com/wp-content/uploads/2018/08/trip-com.png",
+        "name":        "Trip.com",
+	"baseLink":    "http://clk.omgt3.com/?AID=1189987&PID=12745&UID={aff_sub}&UID2={transaction_id}&UID5={source}&r=",
+	"main_off_id": 1131
+    }
+]
